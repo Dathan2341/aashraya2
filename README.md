@@ -4,9 +4,11 @@ Aashraya is an Android app. The project requires Android 8.0 (API 26) or later.
 
 ## Download and install
 
-1. Open this repository on GitHub and select **Releases**.
-2. Open the latest release and download `app-release.apk`.
-3. Open the downloaded APK on your Android device and follow the install prompt. Android may ask you to allow your browser or file manager to install apps from that source.
+For the latest build, open the repository's **Actions** tab, select the latest successful **Build Android APK** run on `main`, and download the `Aashraya-debug-apk` artifact. Extract the APK, open it on your Android device, and follow the install prompt. Android may ask you to allow your browser or file manager to install apps from that source.
+
+Debug APKs are signed with a temporary GitHub Actions debug key. To install a newer debug build over an older one, both must have the same signing key; otherwise uninstall the old app before installing the new APK. For stable app updates without uninstalling, use the signed APK attached to a GitHub Release.
+
+GitHub Releases are created from `v*` tags. The repository owner must configure the Android signing secrets described below before publishing the first release.
 
 This APK is for Android only; it cannot be installed on iPhone, iPad, or desktop operating systems.
 
